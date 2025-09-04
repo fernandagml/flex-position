@@ -1,0 +1,97 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    /* Distância do topo e da margem esquerda */
+    top: 0; 
+    left: 0;
+
+    width: 100vw;
+    height: 15vh;
+    padding: 0 20px;
+
+    background-color: white;
+    /* sombra */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
+    /* Profundidade/camada */
+    /* Fica a frente de 1000 elementos que ficarão atrás para garantir a visualização do header na tela */
+    z-index: 1000;
+}
+
+.header-logo img{
+    height: 50px;
+}
+
+.header-menu ul{
+    display: flex;
+    /* espaço entre os itens -> para não precisar criar um espaço dentro (padding) */
+    gap: 20px;
+}
+
+.header-menu li{
+    padding: 8px 15px;
+    /* muda o cursor mouse para a setinha de clicar */
+    cursor: pointer;
+    border-radius: 5px;
+    /* cria um efeito de transição na hora que passar o cursor */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* para o usuário não conseguir selecionar a escrita - evita a seleção do texto*/
+    user-select: none;
+}
+
+/* Efeito hover nos itens do menu - definir os atributos do transition - quando o mouse encostar em cima: hover */
+.header-menu li:hover{
+    background-color: lightgray;
+    color: black;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header-login{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-login-icon figure{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.header-login-icon img{
+    width: 100%;
+    height: 100%;
+    /* Pesquisar/entender */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header-search input{
+    padding: 7px 12px;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    height: 40px;
+    width: 180px;
+    /* color: */
+}
+
+.header-search input:focus{
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.main-content{
+    width: 100%;
+    height: 200vh;
+}
+
+.content-sec01{
+    width: 100%;
+    height: 100vh;
+}
