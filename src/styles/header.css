@@ -10,7 +10,7 @@ header{
 
     width: 100vw;
     height: 10vh;
-    padding: 0 20px;
+    padding: 0 30px;
 
     background-color: white;
     /* sombra */
@@ -22,7 +22,6 @@ header{
 
 .header-logo img{
     height: 100px;
-    
 }
 
 .header-menu ul{
@@ -54,7 +53,7 @@ header{
 .header-login{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .header-login-icon{
@@ -73,12 +72,12 @@ header{
 }
 
 .header-search input{
-    padding: 7px 12px;
+    padding: 7px 15px;
     border: 1px solid black;
     border-radius: 20px;
     outline: none;
     transition: border-color 0.3s ease;
-    height: 40px;
+    height: 35px;
     width: 180px;
     /* color: */
 }
