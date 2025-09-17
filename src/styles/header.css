@@ -12,7 +12,7 @@ header{
     height: 10vh;
     padding: 0 30px;
 
-    background-color: white;
+    background-color: rgb(134,59,50);
     /* sombra */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
     /* Profundidade/camada */
@@ -40,14 +40,14 @@ header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* para o usuário não conseguir selecionar a escrita - evita a seleção do texto*/
     user-select: none;
-    color: black;
+    color: white;
 }
 
 /* Efeito hover nos itens do menu - definir os atributos do transition - quando o mouse encostar em cima: hover */
 .header-menu li:hover{
-    background-color: lightgray;
-    color: black;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    color: rgb(134,59,50);
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.4);
 }
 
 .header-login{

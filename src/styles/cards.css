@@ -8,18 +8,27 @@
     color: black;
     text-align: center;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3 ease-out;
+    transition: background-color 0.3s ease-out, transform 0.5s ease;
+    border: 1px solid rgb(134,59,50);
 }
 
 .speaker-card:hover{
-    background-color: white;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(134,59,50);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.2);
+    color: white;
 }
 
 .speaker-card img{
     width: 240px;
     border-radius: 5px;
+    border: 1px solid rgb(134,59,50);
 }
+
+/* .speaker-card img:hover{
+    border: 1px solid white;
+} */
 
 .speaker-card h3{
     padding: 5px 0;
@@ -28,5 +37,6 @@
 .speaker-card p{
     padding: 2px 0;
     font-size: 18px;
-    color: gray;
+    /* color: rgb(134,59,50); */
 }
+
