@@ -3,40 +3,44 @@
     overflow: hidden;
     background-color: lightgrey;
     border-radius: 5px;
+    /* padding: 4px 0 4px 0; */
+    /* largura máxima que o card pode ter */
     max-width: 250px;
-    padding: 5px;
-    color: black;
     text-align: center;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-out, transform 0.5s ease;
-    border: 1px solid rgb(134,59,50);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-out;
+    border: 2px solid rgb(134,59,50);
 }
 
+/* pseudoclasse: controla o estado de um elemento */
 .speaker-card:hover{
     background-color: rgb(134,59,50);
-    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: white;
 }
 
-.speaker-card img{
-    width: 240px;
-    border-radius: 5px;
-    border: 1px solid rgb(134,59,50);
+.speaker-card p{
+    font-size: 16px;
+    color: rgb(134,59,50);
 }
 
-/* .speaker-card img:hover{
-    border: 1px solid white;
-} */
+.speaker-card:hover p{
+    color: lightgray;
+}
 
 .speaker-card h3{
     padding: 5px 0;
+    font-size: 22px;
+    color: black;
 }
 
-.speaker-card p{
-    padding: 2px 0;
-    font-size: 18px;
-    /* color: rgb(134,59,50); */
+.speaker-card figcaption{
+    padding: 5px;
 }
 
+.speaker-card img{
+    width: 250px;
+    border-bottom: 2px solid rgb(134,59,50);
+}

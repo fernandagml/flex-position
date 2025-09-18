@@ -24,3 +24,16 @@
 .content-nosso-time{
     justify-content: space-evenly;
 }
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    filter: drop-shadow(0 0 2px #000);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button img{
+    width: 30px;
+}
