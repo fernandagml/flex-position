@@ -17,13 +17,14 @@
     background-color: rgb(134,59,50);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: white;
 }
 
 .speaker-card p{
     font-size: 16px;
     color: rgb(134,59,50);
+    padding-bottom: 10px;
 }
 
 .speaker-card:hover p{
@@ -31,9 +32,8 @@
 }
 
 .speaker-card h3{
-    padding: 5px 0;
+    padding: 10px 0;
     font-size: 22px;
-    color: black;
 }
 
 .speaker-card figcaption{
